@@ -1,0 +1,16 @@
+#history{
+    border: 2px solid red;
+}
+
+#today{
+    border: 2px solid black;
+}
+
+#forecast{
+    border: 2px dotted blue;
+    display: flex;
+}
+
+#forecast-day1, #forecast-day2, #forecast-day3, #forecast-day4, #forecast-day5{
+    
+}
