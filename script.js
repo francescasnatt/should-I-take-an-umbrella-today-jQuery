@@ -1,13 +1,18 @@
   // TO DO
-  // show searched items in list on left
-  // each item in this list is a button
-  // click and see weather info for that city
-  // only call api for new city
-  // details of saved searches are retrieved from local storage - only save names of city
-    // if calling data stored in local storage from over 4 hours ago then go back to api (makes sure data is up to date)
-  // check if city is already in list, if so don't add to list again
-  // use bootstrap cards or bootstrap grid system
-
+    // SEARCH LIST
+      // show searched items in list on left
+      // each item in this list is a button
+      // click button and see weather info for that city
+      // only call api for new city
+      // details of saved searches are retrieved from local storage - only save names of city
+        // if calling data stored in local storage from over 4 hours ago then go back to api (makes sure data is up to date)
+      // check if city is already in list, if so don't add to list again
+    // LAYOUT & STYLING
+      // use bootstrap cards or bootstrap grid system
+    // FORECAST INFO
+      // retrieve weather info for the next 5 days
+      // append to page
+    // README file
 
 
 var APIkey = 'd91f911bcf2c0f925fb6535547a5ddc9';
@@ -72,9 +77,22 @@ $.ajax({
         // DAY 1
       
       // SEARCH LIST
-      // take the search term and create a button with that word on it
-      // save to local storage the info retrieved from that search
+      // take the search term and create a button with that word on it✅
+      // save to local storage the info retrieved from that search✅
+      // save info about MULTIPLE cities to local storage
       // when user clicks on that button info is retrieved and displayed on page
+      var historyEl = $('#history');
+      var cityButton = $('<button>').addClass('city');
+      cityButton.text(searchTerm);
+      historyEl.append(cityButton);
+
+      localStorage.setItem('city', cityName);
+      localStorage.setItem('date', date);
+      localStorage.setItem('icon', icon);
+      localStorage.setItem('temp', temp);
+      localStorage.setItem('humid', humid);
+      localStorage.setItem('wind', wind);
+  
     })
   })
 }

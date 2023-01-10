@@ -1,16 +1,31 @@
+#grid-container{
+    background-color: #eee;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "SearchList Today"
+        "SearchList Forecast";
+}
+
 #history{
-    border: 2px solid red;
+    grid-area: SearchList;
+    background-color: red;
 }
 
 #today{
+    grid-area: Today;
     border: 2px solid black;
 }
 
 #forecast{
+    grid-area: Forecast;
     border: 2px dotted blue;
     display: flex;
 }
 
 #forecast-day1, #forecast-day2, #forecast-day3, #forecast-day4, #forecast-day5{
-    
+    border: 1px solid green;
 }
