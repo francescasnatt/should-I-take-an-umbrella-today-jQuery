@@ -1,4 +1,4 @@
-#grid-container{
+.row{
     background-color: #eee;
     max-width: 1000px;
     margin: 0 auto;
@@ -10,17 +10,16 @@
         "SearchList Forecast";
 }
 
-#history{
+aside{
     grid-area: SearchList;
-    background-color: red;
 }
 
-#today{
+#results > #today{
     grid-area: Today;
     border: 2px solid black;
 }
 
-#forecast{
+#results > #forecast{
     grid-area: Forecast;
     border: 2px dotted blue;
     display: flex;

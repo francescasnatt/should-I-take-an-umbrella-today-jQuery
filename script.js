@@ -83,18 +83,18 @@ $.ajax({
 
         // console.log(date1)
 
-        // var forecastDay1 = $('#forecast-day1');
-        // var day1dateEl = $('<p>').text(date1);
-        // var day1iconEl = $('<p>').attr('src', icon1);
-        // var day1tempEl = $('<p>').text(temp1);
-        // var day1humidEl = $('<p>').text(humid1);
-        // var day1windEl = $('<p>').text(wind1);
+        var forecastDay1 = $('#forecast-day1');
+        var day1dateEl = $('<p>').text(date1);
+        var day1iconEl = $('<p>').attr('src', icon1);
+        var day1tempEl = $('<p>').text(temp1);
+        var day1humidEl = $('<p>').text(humid1);
+        var day1windEl = $('<p>').text(wind1);
 
-        // forecastDay1.append(day1dateEl);
-        // forecastDay1.append(day1iconEl);
-        // forecastDay1.append(day1tempEl);
-        // forecastDay1.append(day1humidEl);
-        // forecastDay1.append(day1windEl);
+        forecastDay1.append(day1dateEl);
+        forecastDay1.append(day1iconEl);
+        forecastDay1.append(day1tempEl);
+        forecastDay1.append(day1humidEl);
+        forecastDay1.append(day1windEl);
       
       // SEARCH LIST
       // take the search term and create a button with that word on it✅
